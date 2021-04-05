@@ -1,0 +1,269 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    /*padding: 0 20px;*/
+}
+
+.main-wrapper {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    display: flex;
+    padding: 20px;
+    background-color: #dddddd;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/logo.png);
+    background-size: cover;
+}
+
+.store-name {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.navigation__link {
+    color: black;
+    padding: 10px 0;
+}
+
+.navigation__link:hover {
+    text-decoration: underline;
+}
+
+.special-offers {
+    /*background-color: lightgrey;*/
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("./img/banner.jpeg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.cta-button {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    align-self: flex-end;
+    margin-bottom: 10%;
+    font-size: 12px;
+    height: 38px;
+    width: 110px;
+    border: 1px solid #f6f5f5;
+    background-color: #903749;
+    color: #f6f5f5;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    /*margin: 0 auto 40px;*/
+}
+
+.cta-button:hover {
+    background-color: #53354a;
+}
+
+.img-wrapper {
+    margin-top: 66%;
+}
+
+
+.all-items {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-around;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px #f9f3f3;
+
+}
+
+.best-deals__item {
+    height: 16em;
+}
+
+.subscription {
+    margin-top: 20px;
+    padding: 40px 20px;
+    background-color: #f9f3f3;
+}
+
+.btn {
+    font-size: 12px;
+    height: 32px;
+    letter-spacing: 2px;
+    /*padding: 0 20px;*/
+    width: 20%;
+    background-color: #e8594e;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.email-input {
+    height: 30px;
+    /*width: 200px;*/
+    width: 60%;
+    padding: 0 10px;
+    border: solid 1px #e8594e;
+    /*padding: 10px 40px;*/
+    border-radius: 8px;
+}
+
+.email-input::placeholder {
+    color: #e8594e;
+    opacity: 1;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.links-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.social__link {
+    display: block;
+    background: center no-repeat;
+    background-size: cover;
+}
+
+.social__link--fb {
+    background-image: url("./img/fb.png");
+    width: 20px;
+    height: 20px;
+}
+
+.social__link--tw {
+    background-image: url("./img/tw.png");
+    width: 20px;
+    height: 20px;
+}
+
+.social__link--in {
+    background-image: url("./img/insta.png");
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 768px){
+    .all-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .btn {
+        width: 100px;
+    }
+
+    .email-input {
+        width: 240px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .main-wrapper {
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .navigation {
+        grid-row: span 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .banner {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .cta-button {
+        margin-left: 60px;
+        margin-bottom: 0;
+        align-self: center;
+    }
+
+    .img-wrapper {
+        margin-top: 20%;
+    }
+
+    .all-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .contacts {
+        order: 1;
+        align-self: flex-end;
+        justify-content: flex-end;
+        float: right;
+    }
+
+    .copyright-wrapper {
+        /*align-self : flex-end;*/
+    }
+}
