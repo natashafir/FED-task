@@ -55,6 +55,10 @@ a {
     font-weight: 800;
 }
 
+.block-name {
+    margin: 14px 0;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
