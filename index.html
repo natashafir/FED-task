@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Store</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
 <div class="wrapper">
     <header class="header">
-        <div class="logo"></div>
-        <div class="store-name">
-            Geeks store
-        </div>
+        <img class="logo" src="./img/logo.png" alt="">
+        <h1 class="store-name">Geeks store</h1>
     </header>
-    <div class="main-wrapper">
+    <main class="main-wrapper">
         <nav class="navigation">
             <a class="navigation__link" href="/all-products/">All products</a>
             <a class="navigation__link" href="/top-selling/">Top selling</a>
@@ -27,7 +24,6 @@
             <h2 class="block-name">Our special offers</h2>
             <div class="banner">
                 <div class="img-wrapper"></div>
-                <!--<img src="https://picsum.photos/2000/400" alt="">-->
                 <button class="cta-button">Buy now</button>
             </div>
         </section>
@@ -76,7 +72,7 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
     <section class="subscription">
         <h2 class="block-name">Sign up to newsletter</h2>
         <p>Subscribe to our newsletter and stay updated on the latest products and news of the store.</p>
@@ -87,20 +83,20 @@
         </form>
     </section>
     <footer class="footer">
-        <div class="footer__links-wrapper">
+        <nav class="footer__links-wrapper">
             <a class="footer__link" href="/privacy-policy/">Privacy policy</a>
             <a class="footer__link" href="/terms-of-use/">Terms of use</a>
             <a class="footer__link" href="/sitemap.xml/">Sitemap</a>
-        </div>
+        </nav>
         <div class="footer__contacts">
-            <p class="footer__section-name">Contact us:</p>
+            <div class="footer__section-name">Contact us:</div>
             <address>
                 <p>Ukraine, Kyiv</p>
                 <a class="footer__link" href="tel:+13115552368">(311) 555-2368</a>
             </address>
         </div>
         <div class="footer__social-icons">
-            <p class="footer__section-name">Follow us:</p>
+            <div class="footer__section-name">Follow us:</div>
             <ul class="footer__social">
                 <li class="social__item">
                     <a href="https://twitter.com" class="social__link social__link--tw" aria-label="Twitter"></a>
@@ -113,9 +109,7 @@
                 </li>
             </ul>
         </div>
-        <div class="footer__copyright">
-            <p>Copyright &copy; 2021 - All rights reserved </p>
-        </div>
+        <p class="footer__copyright">Copyright &copy; 2021 - All rights reserved</p>
     </footer>
 </div>
 </body>
